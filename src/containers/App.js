@@ -5,6 +5,7 @@ import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import { withRouter } from 'react-router-dom'
 import Login from './Authentication/Login'
+import Home from './Home'
 import { resetErrorMessage } from '../actions'
 
 class App extends Component {
@@ -47,7 +48,7 @@ class App extends Component {
     const { children, inputValue } = this.props
     return (
       <div>
-        <Login value={inputValue}
+        <Home value={inputValue}
                  onChange={this.handleChange} />
         <hr />
         {this.renderErrorMessage()}

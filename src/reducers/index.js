@@ -1,7 +1,9 @@
-import * as ActionTypes from '../actions';
+// import * as ActionTypes from '../actions';
 // import merge from 'lodash/merge'
 // import paginate from './paginate'
 import { combineReducers } from 'redux';
+import forms from './forms';
+import appState from './appState';
 
 // // Updates an entity cache in response to any action with response.entities.
 // const entities = (state = { users: {}, repos: {} }, action) => {
@@ -46,7 +48,8 @@ import { combineReducers } from 'redux';
 // })
 
 const rootReducer = combineReducers({
-
+  forms,
+  appState
 })
 
 export default rootReducer
