@@ -1,6 +1,8 @@
 const app = require('./app');
+const forms = require("./forms");
 
 
 module.exports = {
-  ...app
+  ...app,
+  ...forms
 };
